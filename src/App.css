@@ -357,6 +357,12 @@ height: 27px;
         width: 34%;
         height: 40%;
     }
+    :root{
+        --swiper-theme-color:none;
+    }
+    .swiper{
+        height: 89%;
+    }
   
 .dropdown-container{
     width: 20%;
@@ -385,12 +391,13 @@ height: 27px;
       }
       
       .dropdown-menu {
-        width: 100vw;
+        width: 98vw;
         list-style: none;
         padding: 0;
         display: block;
         position: fixed;
-        left: 0%;
+        top: 7.5%;
+        left: 0.1%;
       }
       ul{
         background-color: #4b5320;
@@ -649,7 +656,7 @@ width: 100%;
        background-position: 35%;
     }
     .mainpage{
-        background-size: 400%;
+        background-size: 420%;
     }
     .consulting>div>.butcall {
         padding: 14px 40px;
@@ -667,6 +674,12 @@ width: 100%;
       .socials{
         font-size: 15px;
         justify-content: normal;
+      }
+      .doc>h3{
+        font-size: 22px;
+      }
+      .swiper{
+        margin-bottom: 100px;
       }
   }
 
