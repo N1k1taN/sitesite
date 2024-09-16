@@ -151,6 +151,7 @@ justify-self: end;
     font-size: 25px;
     font-weight: 700;
     height: 100%;
+    color: black;
 }
 .AccordionTrigger[data-state="open"]::after{
 content: url(./icons/x-solid.svg);
@@ -391,13 +392,13 @@ height: 27px;
       }
       
       .dropdown-menu {
-        width: 98vw;
+        width: 100%;
         list-style: none;
         padding: 0;
         display: block;
         position: fixed;
-        top: 7.5%;
-        left: 0.1%;
+        top: 7.7%;
+        left: 0;
       }
       ul{
         background-color: #4b5320;
@@ -684,6 +685,13 @@ width: 100%;
       .swiper{
         margin-bottom: 100px;
       }
+
   }
 
 
+  @media all and (max-width:400px){
+    .dropdown-menu {
+  
+        top: 9vh;
+      }
+  }
