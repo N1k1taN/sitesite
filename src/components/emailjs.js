@@ -48,7 +48,7 @@ const ContactForm = ({ handleBackgroundClick, callPageRef }) => {
           
           <label htmlFor="phone-number">Номер телефону</label>
           <input 
-            type="number" 
+            type="tel" 
             name="phone-number" 
             id="phone-number" 
             required 

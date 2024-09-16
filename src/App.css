@@ -581,6 +581,9 @@ background-position: 0;
           height: 20px;
           width: 20px;
       }
+      .senderbutt{
+    padding: 16px 80px;
+      }
   
       .AccordionRoot{
 width: 100%;
