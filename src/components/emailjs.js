@@ -12,7 +12,7 @@ const ContactForm = ({ handleBackgroundClick, callPageRef }) => {
    
     const phoneNumber = e.target['phone-number'].value;
 
-    const phoneRegex = /^[0-9]{9}$/; 
+    const phoneRegex = /^[0-9]{10}$/; 
 
     if (!phoneRegex.test(phoneNumber)) {
       setPhoneError(true); 
