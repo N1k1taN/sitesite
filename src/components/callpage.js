@@ -1,20 +1,28 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react'; 
 import '../App.css'; // Import any necessary styles
-import call from"../icons/call.png"
-import ContactForm from "./emailjs"
+import call from"../icons/call.png";
+import ContactForm from "./emailjs";
 
 const OpenMenuButton = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
   const callPageRef = useRef(null); // Reference to the call page
+  const timerRef = useRef(null); // Timer reference
 
-  // Function to open the menu (set background and callpage visible)
+  // Function to open the contact form
   const openMenu = () => {
-    console.log("Button clicked"); // Debugging to check if button is clicked
     setIsMenuOpen(true);
-    console.log("isMenuOpen:", isMenuOpen); // Check state
+    clearTimeout(timerRef.current); // Stop the timer when the form is opened manually
   };
 
-  // Function to close the menu if clicking outside the callpage
+  useEffect(() => {
+    // Set a 20-second timer to open the form automatically
+    timerRef.current = setTimeout(() => {
+      setIsMenuOpen(true);
+    }, 20000);
+
+    return () => clearTimeout(timerRef.current);
+  }, []);
+
   const handleBackgroundClick = (event) => {
     console.log("Background clicked");
     if (callPageRef.current && !callPageRef.current.contains(event.target)) {
@@ -27,17 +35,17 @@ const OpenMenuButton = () => {
 
   return (
     <div>
-      {/* Button to open the menu */}
+      {/* Button to manually open the contact form */}
       <button className="butcall" onClick={openMenu}>
-      <img class="callpng" src={call}></img>Замовити дзвінок
+        <img className="callpng" src={call} alt="call"></img>Замовити дзвінок
       </button>
 
       {/* Background and Call Page (conditionally rendered) */}
       {isMenuOpen && (
-            <ContactForm
-            handleBackgroundClick={handleBackgroundClick}
-            callPageRef={callPageRef}
-          />
+        <ContactForm
+          handleBackgroundClick={handleBackgroundClick}
+          callPageRef={callPageRef}
+        />
       )}
     </div>
   );
@@ -45,14 +53,3 @@ const OpenMenuButton = () => {
 
 export default OpenMenuButton;
 
-
-
-
-/* 
-<div class="callpage">
-<h2>Замовити консультацію адвоката</h2>
-<p>Введіть ваш номер телефону
-  і ми зв'яжемося з Вами протягом 5 хвилин!</p>
-<p1>Номер телефону</p1>
-<input type="text"></input>
-<button class="senderbutt"> Замовити</button> */

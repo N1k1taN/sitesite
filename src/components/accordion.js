@@ -3,7 +3,7 @@ import * as Accordion from '@radix-ui/react-accordion';
 import classNames from 'classnames';
 
 
-const AccordionDemo = () => (
+const Accordions = () => (
   <Accordion.Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
     <Accordion.Item className="AccordionItem" value="item-1">
       <AccordionTrigger><div>ВІДСТРОЧКА ВІД ПРИЗОВУ НА ВІЙСКОВУ СЛУЖБУ ПІД ЧАС МОБІЛЗАЦІЇ</div></AccordionTrigger>
@@ -129,4 +129,4 @@ const AccordionContent = React.forwardRef(({ children, className, ...props }, fo
   </Accordion.Content>
 ));
 
-export default AccordionDemo;
+export default Accordions;
