@@ -11,25 +11,22 @@ const OpenMenuButton = () => {
   // Function to open the contact form
   const openMenu = () => {
     setIsMenuOpen(true);
-    clearTimeout(timerRef.current); // Stop the timer when the form is opened manually
+    clearTimeout(timerRef.current); 
   };
 
   useEffect(() => {
     // Set a 20-second timer to open the form automatically
     timerRef.current = setTimeout(() => {
       setIsMenuOpen(true);
-    }, 20000);
+    }, 1120000);
 
     return () => clearTimeout(timerRef.current);
   }, []);
 
   const handleBackgroundClick = (event) => {
-    console.log("Background clicked");
     if (callPageRef.current && !callPageRef.current.contains(event.target)) {
-      console.log("Clicked outside callpage, closing menu");
       setIsMenuOpen(false);
     } else {
-      console.log("Clicked inside callpage, menu stays open");
     }
   };
 
