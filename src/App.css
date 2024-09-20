@@ -34,10 +34,13 @@ html{
   margin-top: 2.5%;
   }
   .phone-prefix{
-    position: relative;
-    top: 14%;
-  left: -29%;
+position: relative;
   font-size: 22px;
+left: -2%;
+top: 5%;
+  }
+  div>input{
+    height: 100%;
   }
   
   .butcall:hover{
@@ -150,13 +153,17 @@ background-color: inherit;
   display: flex;
   padding-top: 0;
   flex-direction: row;
-    align-items: baseline;
     width: 100%;
+    justify-content: center;
 height: 80px;}
 
-.consulting>.bods>span{
+.consulting>.bods>div{
+  display: inline-block;
   font-family: 'Blackops';
-  height: 44px;
+  padding-top: 40px;
+}
+.consulting>.bods>img{
+  display: inline-block;
 }
   
 
@@ -788,7 +795,7 @@ width: 100%;
   }
   .callpage{
       width: 90%;
-      height: 70%;
+      height: 50%;
   }
   }
 
@@ -808,7 +815,8 @@ width: 100%;
       width: 60%;
   height: 100%;
     }
-    .bods>span{
+    .consulting>.bods>div{
+      padding-top: 54px;
       font-size: 20px;
     }
       section>h2{
@@ -858,8 +866,8 @@ width: 100%;
       }
       .phone-prefix{
         position: relative;
-        top: 10.5%;
-      left: -35%;
+        top: 5.5%;
+      left: -2%;
       font-size: 22px;
       }
       .contactinfo>div>div>p:nth-child(3) {

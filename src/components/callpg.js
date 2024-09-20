@@ -52,7 +52,7 @@ const Callpg = () => {
     <div>
       {/* Если экран меньше 600px, показываем ссылку для звонка */}
       {isMobile ? (
-        <a className='buttonfast' href="tel:+123456789">
+        <a className='buttonfast' href="tel:+380937452557">
           <img src={call}></img>
         </a>
       ) : (

@@ -47,14 +47,16 @@ const ContactForm = ({ handleBackgroundClick, callPageRef }) => {
             <p>Введіть ваш номер телефону і ми зв'яжемося з Вами протягом 5 хвилин!</p>
 
             <label htmlFor="phone-number">Номер телефону</label>
+            <div>
             <span className="phone-prefix">+38</span>
             <input 
               type="tel" 
               name="phone-number" 
-              id="phone-number" 
+              id="phone-number"
+              maxlength="10"
               required 
               onChange={() => setPhoneError(false)} // Сбрасываем ошибку при изменении
-            />
+            /></div>
 
             {phoneError && <p style={{ color: 'red' }}>Неправильний формат номера</p>}
 

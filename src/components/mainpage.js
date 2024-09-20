@@ -57,7 +57,7 @@ function Mainpage() {
   
   <div className="consulting " id="3">
   <h2>ПРО НАШУ КОМПАНІЮ</h2>
-  <h3 className="bods"><img src={logo}></img><span>COMPANY</span></h3>
+  <h3 className="bods"><img src={logo}></img><div>COMPANY</div></h3>
   <p>Наше гасло «ЕКСПЕРТНІСТЬ, УСПІХ, ПРОФЕСІОНАЛІЗМ»</p>
   <p>NLAW Company, являється юридичною компанією заснованою у 2024 році в Україні, керуючим партнером Науменко Ярославом Олексійовичем.
   <p>Так, ми досить молоді, але й досить амбіціозні.</p>
