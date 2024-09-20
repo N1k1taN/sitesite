@@ -17,7 +17,7 @@ const Accordions = () => {
   };
 
   return (
-    <Accordion.Root className="AccordionRoot" type="single" defaultValue="item-1" collapsible>
+    <Accordion.Root className="AccordionRoot" type="single" Value="item-1" collapsible>
       <Accordion.Item className="AccordionItem" value="item-1">
         <AccordionTrigger>
           <div
