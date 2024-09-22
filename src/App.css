@@ -8,8 +8,6 @@ html{
               box-sizing: border-box;
               font-family: "Varela", sans-serif;
               outline: none;
-
-
   }
   @font-face {
     font-family: 'Blackops';
@@ -924,8 +922,14 @@ padding-left: 10px;
       .documents>h2{
         font-size: 32px;
       }
+      .help>h2{
+        font-size: 32px;
+      }
+      .consulting>h2{
+        font-size: 32px;
+      }
       .AccordionTrigger>div{
-        font-size: 18px;
+        font-size: 17px;
       }
       .doc{
         font-size: 12px;
