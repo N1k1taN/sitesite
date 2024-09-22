@@ -169,10 +169,10 @@ function Mainpage() {
           </div>
       </div>
       <div className="messengers" id="5">
-          <a href="viber://chat?number=%2B380937452557"><img src={viber} alt="viber"></img></a>
-          <a href="https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC"><img src={signal} alt="signal"></img></a>
-          <a href="https://t.me/Nlaw_company"><img src={teleg} alt="telegram"></img></a>
-          <a href="https://api.whatsapp.com/message/X3PEXBN6BKQHF1?autoload=1&app_absent=0"><img src={whatsapp} alt="whatsapp"></img></a>
+          <a href="viber://chat?number=%2B380937452557" target="_blank" rel="noopener noreferrer"><img src={viber} alt="viber"></img></a>
+          <a href="https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC" target="_blank" rel="noopener noreferrer"><img src={signal} alt="signal"></img></a>
+          <a href="https://t.me/Nlaw_company"><img src={teleg} alt="telegram" target="_blank" rel="noopener noreferrer"></img></a>
+          <a href="https://wa.me/message/X3PEXBN6BKQHF1" target="_blank" rel="noopener noreferrer"><img src={whatsapp} alt="whatsapp"></img></a>
       </div>
   </div>
   <div className="allrights">

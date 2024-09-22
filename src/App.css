@@ -918,7 +918,16 @@ padding-left: 10px;
 
   @media all and (max-width:400px){
     .dropdown-menu {
-  
+
         top: 9%;
+      }
+      .documents>h2{
+        font-size: 32px;
+      }
+      .AccordionTrigger>div{
+        font-size: 18px;
+      }
+      .doc{
+        font-size: 12px;
       }
   }
