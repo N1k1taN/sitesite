@@ -12,10 +12,10 @@ html{
 
   }
   @font-face {
-    font-family: 'Blackops'; /* Имя шрифта, которое будем использовать */
-    src: url('./font/StardosStencil-Bold.ttf') format('truetype'); /* Указываем путь до файла шрифта */
-    font-weight: normal; /* Можно задать разные веса (normal, bold и т.д.) */
-    font-style: normal;  /* Указываем стиль шрифта (normal, italic и т.д.) */
+    font-family: 'Blackops';
+    src: url('./font/StardosStencil-Bold.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
   }
   
   .butcall{
@@ -96,10 +96,14 @@ top: 5%;
   .logoname{
       display: flex;
       align-items: center;
+      width: 30%;
+      height: 100%;
   }
   .logoname>img{
-      width: 60%;
+      width: 100%;
+      object-fit: contain;
       z-index: 15;
+      height: 100%;
   }
   
   .info{
@@ -149,21 +153,18 @@ background-color: inherit;
 }
 .consulting>.bods{
 
-  background-color: #4b5320;
   display: flex;
   padding-top: 0;
   flex-direction: row;
-    width: 100%;
+  
+    width: 50%;
     justify-content: center;
-height: 80px;}
+height: 140px;}
 
-.consulting>.bods>div{
-  display: inline-block;
-  font-family: 'Blackops';
-  padding-top: 40px;
-}
+
 .consulting>.bods>img{
   display: inline-block;
+  object-fit: contain;
 }
   
 
@@ -702,6 +703,7 @@ background-position: 0;
     }
 
 
+
 }
   
     @media all and (max-width:1040px){
@@ -772,6 +774,9 @@ width: 100%;
     width: 20%;
     height: 40%;
   }
+  .logoname{
+    width: 50%;
+  }
   
 
   
@@ -812,13 +817,10 @@ width: 100%;
         text-align: center;
     }
     .bods>img{
-      width: 60%;
+      width: 100%;
   height: 100%;
     }
-    .consulting>.bods>div{
-      padding-top: 54px;
-      font-size: 20px;
-    }
+
       section>h2{
           font-size: 39px;
       }
@@ -887,8 +889,9 @@ width: 100%;
         padding-left: 3%;
         padding-right: 3%;
       }
-      .bods{
-        width: 70%;
+      .consulting>.bods{
+        width: 100%;
+        height: 130px;
       }
       
       .socials{

@@ -1,4 +1,4 @@
-import logo from"../icons/Nlaw.png"
+import logo from"../icons/./logo.png"
 import slide1 from "../icons/res/res1.webp"
 import slide2 from "../icons/res/res2.webp"
 import slide3 from "../icons/res/res3.webp"
@@ -30,7 +30,6 @@ function Mainpage() {
       <div className="navbar">
   <a href="#1" className="logoname">
       <img src={logo} alt="logo"></img>
-      <div className="name">COMPANY</div>
   </a>
   <a href="#2" className="linked">ПОСЛУГИ</a>
   <a href="#3" className="linked">ПРО НАС</a>
@@ -57,7 +56,7 @@ function Mainpage() {
   
   <div className="consulting " id="3">
   <h2>ПРО НАШУ КОМПАНІЮ</h2>
-  <h3 className="bods"><img src={logo}></img><div>COMPANY</div></h3>
+  <h3 className="bods"><img src={logo} alt="logo"></img></h3>
   <p>Наше гасло «ЕКСПЕРТНІСТЬ, УСПІХ, ПРОФЕСІОНАЛІЗМ»</p>
   <p>NLAW Company, являється юридичною компанією заснованою у 2024 році в Україні, керуючим партнером Науменко Ярославом Олексійовичем.
   <p>Так, ми досить молоді, але й досить амбіціозні.</p>
@@ -158,10 +157,10 @@ function Mainpage() {
           <div className="socials">
   <p>МИ В СОЦМЕРЕЖАХ</p>
   <div className="social">
-  <a><img src={face} alt="facebook"></img></a>
-  <a><img src={inst} alt="instagram"></img></a>
-  <a><img src={tik} alt="tiktok"></img></a>
-  <a><img src={youtube} alt="youtube"></img></a>
+  <a href="https://inseinin.com.ua/"><img src={face} alt="facebook"></img></a>
+  <a href="https://inseinin.com.ua/"><img src={inst} alt="instagram"></img></a>
+  <a href="https://inseinin.com.ua/"><img src={tik} alt="tiktok"></img></a>
+  <a href="https://inseinin.com.ua/"><img src={youtube} alt="youtube"></img></a>
   </div>
           </div>
       </div>

@@ -53,12 +53,12 @@ const Callpg = () => {
       {/* Если экран меньше 600px, показываем ссылку для звонка */}
       {isMobile ? (
         <a className='buttonfast' href="tel:+380937452557">
-          <img src={call}></img>
+          <img alt="logo"src={call}></img>
         </a>
       ) : (
         <>
         <button className='buttonfast' onClick={toggleMenu}>
-          <img src={call}></img>
+          <img alt="phone"src={call}></img>
           </button>
           {menuOpen && (
             <div className='pgd'>
