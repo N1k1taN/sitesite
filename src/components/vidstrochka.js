@@ -4,14 +4,12 @@ import "../about.css";
 import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/vidstr.jpg"
 import OpenMenuButton from "./callpage";
+import Callpg from "./callpg";
 
 function Vidstrochka() {
   return (
     <div>
-      <div className="practice">
-        <Link to="/"><img src={Arrow}></img></Link>
-        <div>Практика</div>
-      </div>
+<Callpg></Callpg>
       <div className="alde">
       <div className="about">
         <h2>Відстрочка від мобілізації</h2>

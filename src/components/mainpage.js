@@ -21,22 +21,26 @@ import tik from "../icons/socials/./tiktok.svg"
 import inst from "../icons/socials/instagram.svg"
 import youtube from "../icons/socials/youtube-123.svg"
 import Callpg from './callpg'
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 
 function Mainpage() {
+    const location = useLocation();
+    useEffect(() => {
+        const hash = location.hash;
+        if (hash) {
+          const element = document.getElementById(hash.substring(1));
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }},[location]);
+    
     return (
   <div>
   
-      <div className="navbar">
-  <a href="#1" className="logoname">
-      <img src={logo} alt="logo"></img>
-  </a>
-  <a href="#2" className="linked">ПОСЛУГИ</a>
-  <a href="#3" className="linked">ПРО НАС</a>
-  <a href="#6" className="linked">КЕЙСИ</a>
-  <a href="#5" className="linked">КОНТАКТИ</a>
-  <Dropdown></Dropdown>
-      </div>
+
       <Callpg></Callpg>
   <div className="mainpage">
       <div className="info" id="1">
@@ -157,10 +161,10 @@ function Mainpage() {
           <div className="socials">
   <p>МИ В СОЦМЕРЕЖАХ</p>
   <div className="social">
-  <a href="https://inseinin.com.ua/"><img src={face} alt="facebook"></img></a>
-  <a href="https://inseinin.com.ua/"><img src={inst} alt="instagram"></img></a>
-  <a href="https://inseinin.com.ua/"><img src={tik} alt="tiktok"></img></a>
-  <a href="https://inseinin.com.ua/"><img src={youtube} alt="youtube"></img></a>
+  <a href="https://www.facebook.com/profile.php?id=61566465502728" target="_blank" rel="noopener noreferrer"><img src={face} alt="facebook"></img></a>
+  <a href="https://www.instagram.com/nlaw_company?igsh=cWs1MXg4a2poaW5u&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src={inst} alt="instagram"></img></a>
+  <a href="https://www.tiktok.com/@nlaw.company?_t=8puk4R0nGdx&_r=1" target="_blank" rel="noopener noreferrer"><img src={tik} alt="tiktok"></img></a>
+  <a href="http://www.youtube.com/@NLAW_COMPANY" target="_blank" rel="noopener noreferrer"><img src={youtube} alt="youtube"></img></a>
   </div>
           </div>
       </div>

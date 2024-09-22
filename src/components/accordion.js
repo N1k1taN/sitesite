@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as Accordion from '@radix-ui/react-accordion';
 import classNames from 'classnames';
 
 const Accordions = () => {
-  // State to track which links were clicked
-  const [clickedLinks, setClickedLinks] = useState({});
-
   // Function to handle click
-  const handleLinkClick = (key, url) => {
-    if (!clickedLinks[key]) {
-      // Open link in a new tab
-      window.open(url, '_blank');
-      // Update state to mark this link as clicked
-      setClickedLinks({ ...clickedLinks, [key]: true });
-    }
+  const handleLinkClick = (url) => {
+    // Always open the link in a new tab
+    window.open(url, '_blank');
   };
 
   return (
@@ -21,7 +14,7 @@ const Accordions = () => {
       <Accordion.Item className="AccordionItem" value="item-1">
         <AccordionTrigger>
           <div
-            onClick={() => handleLinkClick('link1', '/vidstrochka')}
+            onClick={() => handleLinkClick('/vidstrochka')}
             style={{ cursor: 'pointer' }}
           >
             ВІДСТРОЧКА ВІД ПРИЗОВУ НА ВІЙСКОВУ СЛУЖБУ ПІД ЧАС МОБІЛЗАЦІЇ
@@ -41,7 +34,7 @@ const Accordions = () => {
       <Accordion.Item className="AccordionItem" value="item-2">
         <AccordionTrigger>
           <div
-            onClick={() => handleLinkClick('link2', '/zvilnenyasviskovoi')}
+            onClick={() => handleLinkClick('/zvilnenyasviskovoi')}
             style={{ cursor: 'pointer' }}
           >
             ЗВІЛЬНЕННЯ З ВІЙСКОВОЇ СЛУЖБИ
@@ -57,7 +50,7 @@ const Accordions = () => {
       <Accordion.Item className="AccordionItem" value="item-3">
         <AccordionTrigger>
           <div
-            onClick={() => handleLinkClick('link3', '/Oskargenyavlk')}
+            onClick={() => handleLinkClick('/Oskargenyavlk')}
             style={{ cursor: 'pointer' }}
           >
             ПРИЗНАЧЕННЯ АБО ОСКАРЖЕННЯ РІШЕННЯ ВІЙСКОВО-ЛІКАРСЬКОЇ КОМІСІЇ (ВЛК)
@@ -75,7 +68,7 @@ const Accordions = () => {
       <Accordion.Item className="AccordionItem" value="item-4">
         <AccordionTrigger>
           <div
-            onClick={() => handleLinkClick('link4', '/statusubd')}
+            onClick={() => handleLinkClick('/statusubd')}
             style={{ cursor: 'pointer' }}
           >
             ОТРИМАННЯ СТАТУСУ УЧАСНИКА БОЙОВИХ ДІЙ
@@ -92,7 +85,7 @@ const Accordions = () => {
       <Accordion.Item className="AccordionItem" value="item-5">
         <AccordionTrigger>
           <div
-            onClick={() => handleLinkClick('link5', '/groshovezabez')}
+            onClick={() => handleLinkClick('/groshovezabez')}
             style={{ cursor: 'pointer' }}
           >
             ПРИЗНАЧЕННЯ ВИПЛАТИ ВІЙСЬКОВОСЛУЖБОВЦЯМ ТА ЇХ СІМ'ЯМ
@@ -127,9 +120,7 @@ const Accordions = () => {
 
       <Accordion.Item className="AccordionItem" value="item-7">
         <AccordionTrigger>
-          <div
-
-          >
+          <div>
             СКЛАДАННЯ РАПОРТІВ
           </div>
         </AccordionTrigger>
@@ -147,9 +138,7 @@ const Accordions = () => {
 
       <Accordion.Item className="AccordionItem" value="item-8">
         <AccordionTrigger>
-          <div
-
-          >
+          <div>
             ЗАХИСТ АДВОКАТА У КРИМІНАЛЬНІЙ СПРАВІ
           </div>
         </AccordionTrigger>

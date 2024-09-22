@@ -8,10 +8,7 @@ import OpenMenuButton from "./callpage";
 function Groshovezabez() {
   return (
     <div>
-      <div className="practice">
-        <Link to="/"><img src={Arrow}></img></Link>
-        <div>Практика</div>
-      </div>
+
       <div className="alde">
       <div className="about">
         <h2>Грошове забезпечення та додаткова винагорода</h2>

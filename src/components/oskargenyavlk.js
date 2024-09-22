@@ -5,15 +5,12 @@ import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/vislav.jpg"
 import OpenMenuButton from "./callpage";
 import Callpg from "./callpg";
+import Dropdown from "./dropdown";
 
 function Oskargenyavlk() {
   return (
     <div>
         <Callpg></Callpg>
-      <div className="practice">
-        <Link to="/"><img src={Arrow}></img></Link>
-        <div>Практика</div>
-      </div>
       <div className="alde">
       <div className="about">
         <h2>Оскарження рішення ВЛК</h2>

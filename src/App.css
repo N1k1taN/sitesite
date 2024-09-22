@@ -165,6 +165,7 @@ height: 140px;}
 .consulting>.bods>img{
   display: inline-block;
   object-fit: contain;
+  width: 100%;
 }
   
 
@@ -328,8 +329,7 @@ margin-bottom: 20px;
       border: solid 2.5px #4b5320;
       display: flex;
       background-color: white;
-  width: 45%;   
-   height: 30%;
+
       z-index: 6;
       flex-wrap: wrap;
       flex-direction: column;
@@ -337,6 +337,10 @@ margin-bottom: 20px;
       justify-content: space-around;
       position: relative;
       top: 5%;
+  }
+  .callpage>form>div>input{
+    margin: 25px 25px 25px 0;
+    font-size: 20px;
   }
 
   form{
@@ -426,7 +430,9 @@ margin-bottom: 20px;
     position: relative;
     z-index: 15;
     }
-
+    .socials>div>a>img{
+      margin-left: 5px;
+    }
   
     .dropdown-container {
         position: relative;
@@ -799,8 +805,7 @@ width: 100%;
       margin-bottom: 35px;
   }
   .callpage{
-      width: 90%;
-      height: 50%;
+
   }
   }
 

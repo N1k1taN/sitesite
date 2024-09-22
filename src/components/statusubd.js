@@ -4,15 +4,13 @@ import "../about.css";
 import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/ubd.jpg"
 import OpenMenuButton from "./callpage";
+import Callpg from "./callpg";
 
 
 function Statusubd() {
   return (
     <div>
-      <div className="practice">
-        <Link to="/"><img src={Arrow}></img></Link>
-        <div>Практика</div>
-      </div>
+<Callpg></Callpg>
       <div className="alde">
       <div className="about">
         <h2>Отримання статусу УБД</h2>

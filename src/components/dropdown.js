@@ -3,6 +3,7 @@ import viber from '../icons/messengers/Viber_icon_white.svg'
 import signal from '../icons/messengers/Signal-Logo-Ultramarine.svg'
 import teleg from "../icons/messengers/teleg.svg"
 import whatsapp from "../icons/messengers/Digital_Glyph_White.svg"
+import { Link } from 'react-router-dom';
 const Dropdown = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1259);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -57,10 +58,10 @@ const Dropdown = () => {
 
       {isDropdownOpen && (
         <ul className="dropdown-menu">
-          <li className="dad"><a href="#2" className="linked" onClick={toggleDropdown}>Послуги</a></li>
-          <li className="dad"><a href="#3" className="linked" onClick={toggleDropdown}>Про нас</a></li>
-          <li className="dad"><a href="#6" className="linked" onClick={toggleDropdown}>Кейси</a></li>
-          <li className="dad"><a href="#5" className="linked" onClick={toggleDropdown}>Контакти</a></li>
+          <li className="dad"><Link to="/#2" className="linked" onClick={toggleDropdown}>Послуги</Link></li>
+          <li className="dad"><Link to="/#3" className="linked" onClick={toggleDropdown}>Про нас</Link></li>
+          <li className="dad"><Link to="/#6" className="linked" onClick={toggleDropdown}>Кейси</Link></li>
+          <li className="dad"><Link to="/#5" className="linked" onClick={toggleDropdown}>Контакти</Link></li>
           <li className="dad"><a className='socials-dropdown' href='viber://chat?number=%2B380937452557'><img src={viber}></img></a><a className='socials-dropdown' href='https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC'><img src={signal}></img></a><a className='socials-dropdown' href='https://t.me/Nlaw_company'><img src={teleg}></img></a><a className='socials-dropdown' href='https://api.whatsapp.com/message/X3PEXBN6BKQHF1?autoload=1&app_absent=0'><img src={whatsapp}></img></a></li>
         </ul>
       )}
