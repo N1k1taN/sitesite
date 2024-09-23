@@ -37,7 +37,7 @@ const Accordions = () => {
             onClick={() => handleLinkClick('/zvilnenyasviskovoi')}
             style={{ cursor: 'pointer' }}
           >
-            ЗВІЛЬНЕННЯ З ВІЙСКОВОЇ СЛУЖБИ
+            ЗВІЛЬНЕННЯ З ВІЙСЬКОВОЇ СЛУЖБИ
           </div>
         </AccordionTrigger>
         <AccordionContent>
@@ -53,14 +53,14 @@ const Accordions = () => {
             onClick={() => handleLinkClick('/Oskargenyavlk')}
             style={{ cursor: 'pointer' }}
           >
-            ПРИЗНАЧЕННЯ АБО ОСКАРЖЕННЯ РІШЕННЯ ВІЙСКОВО-ЛІКАРСЬКОЇ КОМІСІЇ (ВЛК)
+            ПРИЗНАЧЕННЯ АБО ОСКАРЖЕННЯ РІШЕННЯ ВІЙСЬКОВО-ЛІКАРСЬКОЇ КОМІСІЇ (ВЛК)
           </div>
         </AccordionTrigger>
         <AccordionContent>
           <div className="AccordionContentText">
             <h2>- Призначення ВЛК у звʼязку з погіршенням стану здоровʼя.</h2>
             <h2>- Оскарження ВЛК у звʼязку з не вірним висновком про ступень здоров’я до військової служби.</h2>
-            <h2>- Оскарження ВЛК у звʼязку з не вірним причинним звʼязком або травми захворювання.</h2>
+            <h2>- Оскарження ВЛК у звʼязку з не вірним причинним звʼязком травми, захворювання.</h2>
           </div>
         </AccordionContent>
       </Accordion.Item>
@@ -146,7 +146,7 @@ const Accordions = () => {
           <div className="AccordionContentText">
             <h2>- Захист по не явці за повісткою.</h2>
             <h2>- Захист по самовільному залишенню військової частини.</h2>
-            <h2>- Захист по не виконанню наказу.</h2>
+            <h2>- Захист по невиконанню наказу.</h2>
           </div>
         </AccordionContent>
       </Accordion.Item>
@@ -160,6 +160,7 @@ const Accordions = () => {
         <AccordionContent>
           <div className="AccordionContentText">
             <h2>- Супровід перевірок органами ДПС.</h2>
+            <h2>- Супровід адвоката при перевірках ТЦК та СП.</h2>
             <h2>- Оскарження безпідставного відкриття кримінальних справ.</h2>
             <h2>- Супровід адвоката у кримінальних справах щодо економічних злочинів.</h2>
           </div>
