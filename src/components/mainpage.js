@@ -106,6 +106,7 @@ function Mainpage() {
             centeredSlides={true} 
             spaceBetween={5}
             slidesPerView={1}
+            initialSlide={2}
             pagination={{ clickable: true }}
             navigation
             zoom={true}
@@ -125,10 +126,6 @@ function Mainpage() {
   </SwiperSlide>
   <SwiperSlide><div className="swiper-zoom-container">
             <img src={slide3} alt="Slide 3" />
-          </div>
-  </SwiperSlide>
-  <SwiperSlide><div className="swiper-zoom-container">
-            <img src={slide1} alt="Slide 4" />
           </div>
   </SwiperSlide>
       </Swiper>

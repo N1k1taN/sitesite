@@ -169,16 +169,17 @@ height: 140px;}
 
 
 .AccordionTrigger::after{
+  height: 100%;
 align-self: end;
 content: url(./icons/plus-solid.svg);
 width: 35px;
 height: 35px;
-padding-top: 25px;
-padding-bottom: 25px;
+margin: auto;
 justify-self: end;
 }
 .AccordionTrigger>div{
     padding-top: 3%;
+    padding-bottom: 3%;
     text-align: start;
     display: inline-block;
     width: 85%;
@@ -818,6 +819,7 @@ width: 100%;
 
   
   @media all and (max-width:500px){
+
     .info{
       width: 90%;
     }
@@ -838,6 +840,10 @@ width: 100%;
       }
       .name{
         font-size: 16px;
+    }
+    h2{
+      padding-right: 3%;
+      padding-left: 3%; 
     }
     section{
       margin-bottom: 50px;
@@ -893,9 +899,7 @@ width: 100%;
       .AccordionTrigger>div{
         padding-left: 3%;
       }
-      .AccordionTrigger::after{
-        padding-right: 3%;
-      }
+
       .AccordionContentText{
         font-size: 14px;
         padding-left: 3%;
@@ -917,7 +921,11 @@ width: 100%;
       }
       .consulting>p{
         width: 100%;
-padding-left: 10px;
+padding-left: 4%;
+padding-right: 4%;
+      }
+      .consulting>.bods>img {
+        width: 95%;
       }
 
     }
