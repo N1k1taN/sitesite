@@ -23,6 +23,10 @@ import youtube from "../icons/socials/youtube-123.svg"
 import Callpg from './callpg'
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import slidevidguk1 from '../icons/vidguk/photo_2024-09-26_15-09-18.jpg'
+import slidevidguk2 from '../icons/vidguk/photo_2024-09-26_15-09-38.jpg'
+import slidevidguk3 from '../icons/vidguk/photo_2024-09-26_15-09-42.jpg'
+
 
 
 
@@ -70,6 +74,37 @@ function Mainpage() {
   У штаті нашої компанії, наявні спеціалісти з практик військового, цивільного, сімейного, спадкового, господарського, адміністративного та кримінального права. </p>
   
   </div>
+  <div className="Comments">
+    <h2>ВІДГУКИ</h2>
+    <Swiper id="vidguk"
+            modules={[Navigation, Pagination,Zoom]}
+            centeredSlides={true} 
+            spaceBetween={5}
+            slidesPerView={1}
+            initialSlide={2}
+            pagination={{ clickable: true }}
+            navigation
+            zoom={true}
+            loop={true}
+            breakpoints= {{
+              // Когда ширина экрана меньше или равна 768px
+              1100: {
+                slidesPerView: 3,}}}
+      >
+        <SwiperSlide style={{ margin: 0 }}><div className="swiper-zoom-container">
+            <img src={slidevidguk1} className="imgcont" alt="Slide 1" />
+          </div>
+  </SwiperSlide>
+  <SwiperSlide><div className="swiper-zoom-container">
+            <img src={slidevidguk2} className="imgcont" alt="Slide 2" />
+          </div>
+  </SwiperSlide>
+  <SwiperSlide><div className="swiper-zoom-container">
+            <img src={slidevidguk3} className="imgcont" alt="Slide 3" />
+          </div>
+  </SwiperSlide>
+      </Swiper>
+  </div>
   <div className="documents" id="4">
       <h2>ЗАВАНТАЖИТИ ЗРАЗКИ ДОКУМЕНТІВ</h2>
   <div className="doc">
@@ -99,6 +134,7 @@ function Mainpage() {
     
   
   </div>
+
   <section id="6">
       <h2> НАШІ РЕЗУЛЬТАТИ:</h2>
       <Swiper 
