@@ -23,7 +23,7 @@ import youtube from "../icons/socials/youtube-123.svg"
 import Callpg from './callpg'
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import slidevidguk1 from '../icons/vidguk/photo_2024-09-26_15-09-18.jpg'
+import slidevidguk1 from '../icons/vidguk/photo_2024-09-25_16-15-27.jpg'
 import slidevidguk2 from '../icons/vidguk/photo_2024-09-26_15-09-38.jpg'
 import slidevidguk3 from '../icons/vidguk/photo_2024-09-26_15-09-42.jpg'
 import { useRef } from "react";
