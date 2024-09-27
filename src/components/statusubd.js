@@ -13,7 +13,7 @@ function Statusubd() {
 <Callpg></Callpg>
       <div className="alde">
       <div className="about">
-        <h2>Отримання статусу УБД</h2>
+        <h1>Отримання статусу УБД</h1>
         <img src={vlk}></img>
         <h3>Зокрема підставами отримання статусу учасника бойових дій є:</h3>
 <p>-Перебування у зоні бойових дій </p>

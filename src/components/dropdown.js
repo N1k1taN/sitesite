@@ -58,10 +58,11 @@ const Dropdown = () => {
 
       {isDropdownOpen && (
         <ul className="dropdown-menu">
-          <li className="dad"><Link to="/#2" className="linked" onClick={toggleDropdown}>Послуги</Link></li>
-          <li className="dad"><Link to="/#3" className="linked" onClick={toggleDropdown}>Про нас</Link></li>
-          <li className="dad"><Link to="/#6" className="linked" onClick={toggleDropdown}>Кейси</Link></li>
-          <li className="dad"><Link to="/#5" className="linked" onClick={toggleDropdown}>Контакти</Link></li>
+          <li className="dad"><Link to="/#help" className="linked" onClick={toggleDropdown}>Послуги</Link></li>
+          <li className="dad"><Link to="/#about" className="linked" onClick={toggleDropdown}>Про нас</Link></li>
+          <li className="dad"><Link to="/#vidguk" className="linked" onClick={toggleDropdown}>Відгуки</Link></li>
+          <li className="dad"><Link to="/#case" className="linked" onClick={toggleDropdown}>Кейси</Link></li>
+          <li className="dad"><Link to="/#contacts" className="linked" onClick={toggleDropdown}>Контакти</Link></li>
           <li className="dad">Тел:+380937452557</li>
           <li className="dad"><a className='socials-dropdown' href='viber://chat?number=%2B380937452557' target="_blank" rel="noopener noreferrer"><img src={viber}></img></a><a className='socials-dropdown' href='https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC' target="_blank" rel="noopener noreferrer"><img src={signal}></img></a><a className='socials-dropdown' href='https://t.me/Nlaw_company' target="_blank" rel="noopener noreferrer"><img src={teleg}></img></a><a className='socials-dropdown' href='https://wa.me/message/X3PEXBN6BKQHF1' target="_blank" rel="noopener noreferrer"><img src={whatsapp}></img></a></li>
         </ul>

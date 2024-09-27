@@ -10,13 +10,12 @@ const Callpg = () => {
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
-  // Эффект для отслеживания ширины экрана
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 600);
     };
 
-    handleResize(); // Проверяем размер экрана при монтировании компонента
+    handleResize(); 
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -24,12 +23,10 @@ const Callpg = () => {
     };
   }, []);
 
-  // Функция для переключения меню на десктопе
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
   };
 
-  // Функция отправки EmailJS только с номером телефона
   const onSubmit = (data) => {
     const { phone } = data;
 

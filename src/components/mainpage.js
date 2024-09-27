@@ -26,28 +26,37 @@ import { useLocation } from 'react-router-dom';
 import slidevidguk1 from '../icons/vidguk/photo_2024-09-26_15-09-18.jpg'
 import slidevidguk2 from '../icons/vidguk/photo_2024-09-26_15-09-38.jpg'
 import slidevidguk3 from '../icons/vidguk/photo_2024-09-26_15-09-42.jpg'
+import { useRef } from "react";
+
 
 
 
 
 function Mainpage() {
-    const location = useLocation();
-    useEffect(() => {
-        const hash = location.hash;
-        if (hash) {
-          const element = document.getElementById(hash.substring(1));
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
-        }},[location]);
-    
+        const homeRef = useRef(null);
+        const helpref = useRef(null);
+        const aboutRef = useRef(null);
+        const vidgukiref = useRef(null);
+        const caseref = useRef(null)
+        const contactsRef = useRef(null);
+
+        const location = useLocation(); // Получаем текущее расположение (URL)
+        useEffect(() => {
+            if (location.hash) {
+              const element = document.getElementById(location.hash.substring(1));
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }
+          }, [location]);
+
     return (
   <div>
   
 
       <Callpg></Callpg>
-  <div className="mainpage">
-      <div className="info" id="1">
+  <div className="mainpage" id="home" ref={homeRef}>
+      <div className="info" >
       <h1>ВІЙСЬКОВИЙ АДВОКАТ</h1>
       <h2>ОДНІ З НАЙКРАЩИХ У ВИРІШЕННІ ЮРИДИЧНИХ ПИТАНЬ З ВІЙСЬКОВОГО ПРАВА</h2>
       <h2 >ПРАЦЮЄМО ПО ВСІЙ УКРАЇНІ</h2>
@@ -55,14 +64,14 @@ function Mainpage() {
   </div>
   </div>
   <div className="main">
-      <div className="help" id="2" >
+      <div className="help" id="help" ref={helpref} >
   
   <h2>ПРОФЕСІЙНО НАДАЄМО ПОСЛУГИ:</h2>
   
   <Accordions></Accordions>
   </div>
   
-  <div className="consulting " id="3">
+  <div className="consulting " id="about" ref={aboutRef}>
   <h2>ПРО НАШУ КОМПАНІЮ</h2>
   <h3 className="bods"><img src={logo} alt="logo"></img></h3>
   <p>Наше гасло «ЕКСПЕРТНІСТЬ, УСПІХ, ПРОФЕСІОНАЛІЗМ»</p>
@@ -74,9 +83,9 @@ function Mainpage() {
   У штаті нашої компанії, наявні спеціалісти з практик військового, цивільного, сімейного, спадкового, господарського, адміністративного та кримінального права. </p>
   
   </div>
-  <div className="Comments">
+  <div className="Comments" id="vidguk" ref={vidgukiref}>
     <h2>ВІДГУКИ</h2>
-    <Swiper id="vidguk"
+    <Swiper 
             modules={[Navigation, Pagination,Zoom]}
             centeredSlides={true} 
             spaceBetween={5}
@@ -135,7 +144,7 @@ function Mainpage() {
   
   </div>
 
-  <section id="6">
+  <section id="case" ref={caseref}>
       <h2> НАШІ РЕЗУЛЬТАТИ:</h2>
       <Swiper 
             modules={[Navigation, Pagination,Zoom]}
@@ -201,7 +210,7 @@ function Mainpage() {
   </div>
           </div>
       </div>
-      <div className="messengers" id="5">
+      <div className="messengers" id="contacts" ref={contactsRef}>
           <a href="viber://chat?number=%2B380937452557" target="_blank" rel="noopener noreferrer"><img src={viber} alt="viber"></img></a>
           <a href="https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC" target="_blank" rel="noopener noreferrer"><img src={signal} alt="signal"></img></a>
           <a href="https://t.me/Nlaw_company"><img src={teleg} alt="telegram" target="_blank" rel="noopener noreferrer"></img></a>
