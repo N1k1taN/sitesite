@@ -5,8 +5,12 @@ import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/zvilnenya.jpg"
 import OpenMenuButton from "./callpage";
 import Callpg from "./callpg";
+import { useEffect } from "react";
 
 function Zvilnenyasviskovoi() {
+  useEffect(() => {
+    document.title = "Звільнення з військової служби";
+  })
   return (
     <div>
 <Callpg></Callpg>

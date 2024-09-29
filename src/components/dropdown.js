@@ -64,7 +64,19 @@ const Dropdown = () => {
           <li className="dad"><Link to="/#case" className="linked" onClick={toggleDropdown}>Кейси</Link></li>
           <li className="dad"><Link to="/#contacts" className="linked" onClick={toggleDropdown}>Контакти</Link></li>
           <li className="dad">Тел:+380937452557</li>
-          <li className="dad"><a className='socials-dropdown' href='viber://chat?number=%2B380937452557' target="_blank" rel="noopener noreferrer"><img src={viber}></img></a><a className='socials-dropdown' href='https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC' target="_blank" rel="noopener noreferrer"><img src={signal}></img></a><a className='socials-dropdown' href='https://t.me/Nlaw_company' target="_blank" rel="noopener noreferrer"><img src={teleg}></img></a><a className='socials-dropdown' href='https://wa.me/message/X3PEXBN6BKQHF1' target="_blank" rel="noopener noreferrer"><img src={whatsapp}></img></a></li>
+          <li className="dad"><a className='socials-dropdown' href='viber://chat?number=%2B380937452557' target="_blank" rel="noopener noreferrer"
+                    onClick={(e) => {
+                      const userAgent = navigator.userAgent.toLowerCase();
+                      if (userAgent.includes('android')) {
+                        e.preventDefault();
+                        window.location.href = "intent://chat?number=%2B380937452557#Intent;scheme=viber;package=com.viber.voip;end";
+                      } else if (userAgent.includes('ios')) {
+                        window.location.href = "https://apps.apple.com/app/id382617920";
+                      } else {
+                        window.location.href = "https://www.viber.com/";
+                      }
+                    }}
+          ><img src={viber}></img></a><a className='socials-dropdown' href='https://signal.me/#eu/F8axajmr2fkdM4fu5Vl8yFJwj1W31Us0SMwc0h0axGvNA8Svn0NL-JkxLsnJBnCC' target="_blank" rel="noopener noreferrer"><img src={signal}></img></a><a className='socials-dropdown' href='https://t.me/Nlaw_company' target="_blank" rel="noopener noreferrer"><img src={teleg}></img></a><a className='socials-dropdown' href='https://wa.me/message/X3PEXBN6BKQHF1' target="_blank" rel="noopener noreferrer"><img src={whatsapp}></img></a></li>
         </ul>
       )}
     </div>

@@ -5,9 +5,13 @@ import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/ubd.jpg"
 import OpenMenuButton from "./callpage";
 import Callpg from "./callpg";
+import { useEffect } from "react";
 
 
 function Statusubd() {
+  useEffect(() => {
+    document.title = "Статус УБД";
+  })
   return (
     <div>
 <Callpg></Callpg>

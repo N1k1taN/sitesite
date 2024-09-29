@@ -703,6 +703,12 @@ z-index: 90;}
 #vidguk{
   scroll-margin-top: 90px;
 }
+.thx{
+  vertical-align: center;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+}
 .senderbutt2{
   background-color: #4b5320;
   border: none;
@@ -717,6 +723,18 @@ border-radius: 24px;
 cursor: pointer;
 -webkit-transition: all 0.3s;
 margin-bottom: 10px;
+}
+@media all and (max-width:1300px){
+h1{
+  font-size: 75px;
+}
+
+.info>h2:nth-child(2){
+  font-size: 35px;
+}
+.info>h2:nth-child(3){
+  font-size: 35px;
+}
 }
 
 @media all and (max-width:1260px){

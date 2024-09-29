@@ -4,8 +4,12 @@ import "../about.css";
 import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/grosh.jpg"
 import OpenMenuButton from "./callpage";
+import { useEffect } from "react";
 
 function Groshovezabez() {
+  useEffect(() => {
+    document.title = "Грошовове забезспечення";
+  })
   return (
     <div>
 

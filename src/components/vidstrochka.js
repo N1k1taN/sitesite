@@ -5,8 +5,12 @@ import Arrow from "../icons/arrow-left-solid.svg"
 import vlk from "../icons/vidstr.jpg"
 import OpenMenuButton from "./callpage";
 import Callpg from "./callpg";
+import { useEffect } from "react";
 
 function Vidstrochka() {
+  useEffect(() => {
+    document.title = "Відстрочка";
+  })
   return (
     <div>
 <Callpg></Callpg>

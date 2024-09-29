@@ -6,8 +6,12 @@ import vlk from "../icons/vislav.jpg"
 import OpenMenuButton from "./callpage";
 import Callpg from "./callpg";
 import Dropdown from "./dropdown";
+import { useEffect } from "react";
 
 function Oskargenyavlk() {
+  useEffect(() => {
+    document.title = "Оскарження ВЛК";
+  })
   return (
     <div>
         <Callpg></Callpg>
