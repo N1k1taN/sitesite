@@ -23,7 +23,15 @@
   },
   "reactSnap": {
   "inlineCss": true,
-  "minifyHtml": true
+  "minifyHtml": true,
+  "routes": [
+    "/",
+    "/oskargenyavlk",
+    "/groshovezabez",
+    "/vidstrochka",
+    "/zvilnenyasviskovoi",
+    "/statusubd"
+  ]
 },
   "scripts": {
     "start": "react-scripts start",
